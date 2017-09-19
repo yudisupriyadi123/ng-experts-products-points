@@ -5,14 +5,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Process Flow
 `Create UI mockup` ==> `Implement to HTML` (current) ==> `Build Angular App` ==> `MEAN stack`
 
-### Create UI mockup
+#### Create UI mockup
 Using draw.io, you can see the result in `UI_mockup` directory.
 
-### Implement to HTML
+#### Implement to HTML
 Using Bulma CSS Framework, you can see the result in `html` directory.
 
-### Build Angular App
+#### Build Angular App
 *not yet*
 
-### MEAN stack
+#### MEAN stack
 *not yet*
