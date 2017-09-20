@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="language" content="en-EN" />
+    <meta name="author" content="Yudi Supriyadi" />
+    <title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
+
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+<style>
+/* global */
+.navbar-item.has-dropdown {
+    border-left: 1px solid #efefef;
+}
+
+.has-vertically-aligned-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+/* local */
+.product-info .field .control .input {
+    height: 2.0em;
+}
+
+.product-info-right .columns {
+    margin-bottom: 0;
+}
+
+.product-info-right .label {
+    color: #988787;
+    font-weight: normal;
+}
+.product-info-right .icon {
+    color: #1ca7e9;
+    background: yellow;
+}
+
+.product-info-right .social-media {
+    color: #1ca7e9;
+}
+
+.has-addons .button.is-warning.is-static {
+    height: 2.0em;
+    background-color: #ffdd57;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.bio {
+    background: #f8f8f8;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: 10px;
+}
+
+hr.separator {
+    margin: 50px 0;
+}
+
+.social-media .has-addons .button.is-static {
+    height: 2.0em;
+}
+
+#edit-control #or-separator.button {
+    border: none;
+    background-color: none;
+    cursor: default;
+}
+
+.pro-con-control .button {
+    font-size: 14px;
+}
+
+</style>
+
+</head>
+<body>
+
+    <header class="hero is-light">
+        <div class="hero-head">
+            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+
+                    <a class="navbar-item">
+                        <img src="images/bulma-logo.png" alt="Bulma logo">
+                    </a>
+                    <a class="navbar-item is-tab is-hidden-mobile">Experts</a>
+                    <a class="navbar-item is-tab is-hidden-mobile">Products</a>
+
+                    <button class="button navbar-burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+
+
+                <div class="navbar-menu navbar-end" id="navMenu">
+                    <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+                    <a class="navbar-item is-tab is-hidden-tablet">Experts</a>
+                    <a class="navbar-item is-tab is-hidden-tablet">Products</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <figure class="image is-32x32" style="margin-right:.5em;">
+                                <img src="images/avatar.jpg">
+                            </figure>
+                            Yudi
+                        </a>
+
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-o"></i>
+                                </span>
+                                My Profile
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-power-off"></i>
+                                </span>
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="section">
+        <div class="container">
+            <div class="columns">
+                <main class="column">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <div class="title">Your New Product</div>
+                            </div>
+                            <div class="level-item">
+                                <div style="margin:0 100px;background-color: yellow">There are <span class="has-text-info">#4</span> things you have to fill in</div>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <div id="edit-control" class="level-item">
+                                <a href="#" id="save-control" class="button is-primary">Publish New Product</a>
+                                <a href="#" id="or-separator" class="button" disabled>or</a>
+                                <a href="#" id="cancel-control "class="button">Cancel</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="columns">
+                        <div class="column is-three-quarters product-info">
+                            <div class="columns">
+                                <div class="column">
+                                    <img src="" style="width:176px; height: 176px;">
+                                </div>
+                                <div class="column is-three-quarters product-info-right">
+                                    <div class="columns">
+                                        <div class="column is-2 label">
+                                            Product ID
+                                        </div>
+                                        <div class="column is-8">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input class="input" placeholder="Text input" type="text" value="Auto Generated" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="columns">
+                                        <div class="column is-2 label">Prod. Name</div>
+                                        <div class="column is-8">
+                                            <div class="field has-addons">
+                                                <div class="control is-expanded">
+                                                    <input class="input" placeholder="Product Name" type="text">
+                                                    <span class="tag is-warning" style="position:absolute; right: -40px;"><b>#1</b></span>
+                                                </div>
+                                                <!--
+                                                    <div class="control">
+                                                    <a class="button is-warning is-static">#1</a>
+                                                    </div>
+                                                -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <br>
+                                    <br>
+
+                                    <span>Author : <a href="#">Eric Elliot</a></span>
+
+                                </div>
+                            </div>
+
+                            <h6 class="title is-6">Description <span class="tag is-warning">#2</span></h6>
+                            <textarea class="textarea" name="" rows="5" placeholder="Explain here..."></textarea>
+
+                            <div class="columns">
+                                <div class="column is-5 has-vertically-aligned-content"><hr class="separator"></div>
+                                <div class="column is-2 has-vertically-aligned-content has-text-centered has-text-grey-dark">AND THEN</div>
+                                <div class="column is-5 has-vertically-aligned-content"><hr class="separator"></div>
+                            </div>
+
+
+                            <h6 class="title is-6 has-text-info">Pros <span class="tag is-warning">#3</span></h6>
+                            <div class="columns is-multiline pros-list">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right">1.</div>
+                                <div class="column is-6">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Insert text here...">
+                                    </div>
+                                </div>
+                                <div class="column is-s"><button class="button is-danger">X</button></div>
+                            </div>
+                            <div class="columns is-multiline pros-list">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right">2.</div>
+                                <div class="column is-6">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Insert text here...">
+                                    </div>
+                                </div>
+                                <div class="column is-s"><button class="button is-danger">X</button></div>
+                            </div>
+                            <div class="columns is-multiline pros-list">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right">3.</div>
+                                <div class="column is-6">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Insert text here...">
+                                    </div>
+                                </div>
+                                <div class="column is-s"><button class="button is-danger">X</button></div>
+                            </div>
+                            <div class="columns is-multiline pro-con-control">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right"><!-- empty for spacing --></div>
+                                <div class="column is-6">
+                                    <div class="button is-info">
+                                        <span class="icon is-small">
+                                            <i class="fa fa-plus"></i>
+                                        </span>
+                                    </div>
+                                    <div class="button is-danger">
+                                        <span class="icon is-small">
+                                            <i class="fa fa-minus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="column is-s"><!-- empty to make 12 columns --></div>
+                            </div>
+
+                            <h6 class="title is-6 has-text-danger">Cons <span class="tag is-warning">#4</span></h6>
+                            <div class="columns is-multiline pros-list">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right">1.</div>
+                                <div class="column is-6">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Insert text here...">
+                                    </div>
+                                </div>
+                                <div class="column is-s"><button class="button is-danger">X</button></div>
+                            </div>
+                            <div class="columns is-multiline pros-list">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right">2.</div>
+                                <div class="column is-6">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Insert text here...">
+                                    </div>
+                                </div>
+                                <div class="column is-s"><button class="button is-danger">X</button></div>
+                            </div>
+                            <div class="columns is-multiline pros-list">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right">3.</div>
+                                <div class="column is-6">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Insert text here...">
+                                    </div>
+                                </div>
+                                <div class="column is-s"><button class="button is-danger">X</button></div>
+                            </div>
+                            <div class="columns is-multiline pro-con-control">
+                                <div class="column is-1 has-vertically-aligned-content has-text-right"><!-- empty for spacing --></div>
+                                <div class="column is-6">
+                                    <div class="button is-info">
+                                        <span class="icon is-small">
+                                            <i class="fa fa-plus"></i>
+                                        </span>
+                                    </div>
+                                    <div class="button is-danger">
+                                        <span class="icon is-small">
+                                            <i class="fa fa-minus"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="column is-s"><!-- empty to make 12 columns --></div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+        <!-- <script src="/bulma-admin-dashboard-template/dist/build.js"></script> -->
+
+    </body>
+
+</html>
+
