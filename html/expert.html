@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+
+        <meta name="language" content="en-EN" />
+        <meta name="author" content="Irfan Maulana" />
+        <title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
+
+        <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+<style>
+.expert-profile .field .control .input {
+    height: 2.0em;
+}
+
+.expert-profile-right .columns {
+    margin-bottom: 0;
+}
+
+.expert-profile-right .label {
+    color: #988787;
+    font-weight: normal;
+}
+
+.expert-profile-right .icon {
+    color: #1ca7e9;
+    background: yellow;
+}
+
+.expert-profile-right .social-media {
+    color: #1ca7e9;
+}
+
+.bio {
+    background: #f8f8f8;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.expert-product {
+    width: 384px;
+}
+
+.expert-product .card-image img {
+    max-width: 100%;
+    width: 384px;
+    height: 192px;
+}
+
+.expert-product .card-content .icon {
+    margin-right: 5px;
+}
+
+.expert-product .card-content .icon .fa-thumbs-up {
+    color: #1ca7e9;
+}
+
+.expert-product .card-content .icon .fa-thumbs-down {
+    color: #ff3860;
+}
+
+hr.separator {
+    margin: 50px 0;
+}
+
+</style>
+
+    </head>
+
+    <body>
+
+        <header class="hero is-light">
+            <div class="hero-head">
+                <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+
+                        <a class="navbar-item">
+                            <img src="images/bulma-logo.png" alt="Bulma logo">
+                        </a>
+                        <a class="navbar-item is-tab is-hidden-mobile">Experts</a>
+                        <a class="navbar-item is-tab is-hidden-mobile">Products</a>
+
+                        <button class="button navbar-burger" data-target="navMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="navbar-menu navbar-end" id="navMenu">
+                        <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+                        <a class="navbar-item is-tab is-hidden-tablet">Experts</a>
+                        <a class="navbar-item is-tab is-hidden-tablet">Products</a>
+                        <a class="navbar-item nav-tag">              
+                            <span class="icon is-small">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                            <span class="tag is-primary tag-notif">6</span>
+                        </a>  
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">              
+                                <figure class="image is-32x32" style="margin-right:.5em;">
+                                    <img src="images/avatar.jpg">
+                                </figure>
+                                mazipan
+                            </a>
+
+                            <div class="navbar-dropdown is-right">              
+                                <a class="navbar-item">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-user-o"></i>
+                                    </span>
+                                    Profile
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    <span class="icon is-small">
+                                        <i class="fa fa-power-off"></i>
+                                    </span>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="columns">
+                    <main class="column">
+
+                        <div class="title">Expert</div>
+
+                        <div class="columns">
+                            <div class="column is-three-quarters expert-profile">
+                                <div class="columns">
+                                    <div class="column">
+                                        <img src="" style="width:176px; height: 176px;">
+                                    </div>
+                                    <div class="column is-three-quarters expert-profile-right">
+                                        <div class="columns">
+                                            <div class="column is-2 label">
+                                                ID
+                                            </div>
+                                            <div class="column is-8">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" placeholder="Text input" type="text" value="ASD815">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column is-2 label">Nama</div>
+                                            <div class="column is-8">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" placeholder="Text input" type="text" value="Irfan Maulana">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <br>
+                                        <h6 class="title is-6">Social Media</h6>
+
+                                        <div class="columns social-media">
+                                            <div class="column is-4">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-twitter" style="color: green"></i>
+                                                </span>
+                                                : yudi099
+                                            </div>
+                                            <div class="column is-4">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-facebook" style="color: green"></i>
+                                                </span>
+                                                : yudi099
+                                            </div>
+                                            <div class="column is-4">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-linkedin" style="color: green"></i>
+                                                </span>
+                                                : yudi099
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <h6 class="title is-6">Bio</h6>
+                                <div class="bio content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <br><br>
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                </div>
+
+				<hr class="separator">
+
+
+				<h6 class="title is-6">The Expert's Products</h6>
+
+				<div class="columns is-multiline">
+				    <div class="column">
+					<div class="card expert-product">
+					    <div class="card-image">
+						<figure class="image">
+						    <img alt="Placeholder image" style="width: 384px;height: 192px;" src="https://s2.bukalapak.com/uploads/flash_banner/78922/homepage_banner/s-354-354/354x354_no_wording.jpg">
+						</figure>
+					    </div>
+					    <div class="card-content">
+						<nav class="level">
+						    <div class="level-left">
+							<div class="level-item">
+							    Awesome JavaScript Stickers
+							</div>
+						    </div>
+						    <div class="level-right">
+							<p class="level-item">
+							<span class="icon is-small">
+							    <i class="fa fa-thumbs-up"></i>
+							</span> 
+							6
+							</p>
+							<p class="level-item">
+							<span class="icon is-small">
+							    <i class="fa fa-thumbs-down"></i>
+							</span>
+							6
+							</p>
+						    </div>
+						</nav>
+					    </div>
+					</div>
+				    </div>
+				</div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="/bulma-admin-dashboard-template/dist/build.js"></script> -->
+
+    </body>
+
+</html>
+
