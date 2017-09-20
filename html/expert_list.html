@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+
+  <meta name="language" content="en-EN" />
+  <meta name="author" content="Yudi Supriyadi" />
+  <title>Expert List</title>
+
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  
+<style>
+/* global */
+.navbar-item.has-dropdown {
+    border-left: 1px solid #efefef;
+}
+
+/* local */
+.expert-item-container {
+    margin-bottom: 20px;
+}
+.box.expert-item {
+    padding: 0 !important;
+    margin: 20px 0 0 0 !important;
+    overflow: hidden !important;
+}
+
+.box.expert-item:hover {
+    background-color: #f8f8f8;
+}
+
+.expert-item .columns {
+    margin: 0 !important;
+}
+
+.expert-item .column {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.expert-item .has-vertically-aligned-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+}
+
+.expert-item .expert-product-number {
+    color: #a49a9a;
+}
+</style>
+
+</head>
+<body>
+    <header class="hero is-light">
+        <div class="hero-head">
+            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+
+                    <a class="navbar-item">
+                        <img src="images/bulma-logo.png" alt="Bulma logo">
+                    </a>
+                    <a class="navbar-item is-tab is-hidden-mobile">Experts</a>
+                    <a class="navbar-item is-tab is-hidden-mobile">Products</a>
+
+                    <button class="button navbar-burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+
+
+                <div class="navbar-menu navbar-end" id="navMenu">
+                    <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+                    <a class="navbar-item is-tab is-hidden-tablet">Experts</a>
+                    <a class="navbar-item is-tab is-hidden-tablet">Products</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <figure class="image is-32x32" style="margin-right:.5em;">
+                                <img src="images/avatar.jpg">
+                            </figure>
+                            Yudi
+                        </a>
+
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-o"></i>
+                                </span>
+                                My Profile
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-power-off"></i>
+                                </span>
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  <div class="section">
+    <div class="container">
+        <div class="columns">
+          <main class="column">
+
+              <div class="title">Expert List</div>
+        
+            <div class="columns">
+                <div class="column is-half">
+                    <div class="columns">
+                        <div class="column is-two-thirds">
+                            <div class="field">
+                                <p class="control has-icons-right">
+                                <input class="input" type="text" placeholder="Search experts">
+                                <span class="icon is-small is-right">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                </p>
+                            </div>
+
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Sort alphabetically
+                            </label>
+                        </div>
+                    </div>
+                    
+                    
+                    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                        <a class="pagination-previous">Previous</a>
+                        <a class="pagination-next">Next page</a>
+                        <ul class="pagination-list">
+                            <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                            <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                            <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="expert-item-container">
+                        <div class="box expert-item">
+                            <a href="#">
+                                <div class="columns">
+                                    <div class="column is-2">
+                                        <figure class="image is-64x64">
+                                            <img src="images/avatar.jpg">
+                                        </figure>
+                                    </div>
+                                    <div class="column is-7 has-vertically-aligned-content">Yudi Supriyadi</div>
+                                    <div class="column is-3 has-vertically-aligned-content">
+                                        <span class="expert-product-number">has <span class="tag is-danger">5</span> products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box expert-item">
+                            <a href="#">
+                                <div class="columns">
+                                    <div class="column is-2">
+                                        <figure class="image is-64x64">
+                                            <img src="images/avatar.jpg">
+                                        </figure>
+                                    </div>
+                                    <div class="column is-7 has-vertically-aligned-content">Yudi Supriyadi</div>
+                                    <div class="column is-3 has-vertically-aligned-content">
+                                        <span class="expert-product-number">has <span class="tag is-danger">5</span> products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="box expert-item">
+                            <a href="#">
+                                <div class="columns">
+                                    <div class="column is-2">
+                                        <figure class="image is-64x64">
+                                            <img src="images/avatar.jpg">
+                                        </figure>
+                                    </div>
+                                    <div class="column is-7 has-vertically-aligned-content">Yudi Supriyadi</div>
+                                    <div class="column is-3 has-vertically-aligned-content">
+                                        <span class="expert-product-number">has <span class="tag is-danger">5</span> products</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+                        <a class="pagination-previous">Previous</a>
+                        <a class="pagination-next">Next page</a>
+                        <ul class="pagination-list">
+                            <li><a class="pagination-link" aria-label="Goto page 1">1</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 45">45</a></li>
+                            <li><a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a></li>
+                            <li><a class="pagination-link" aria-label="Goto page 47">47</a></li>
+                            <li><span class="pagination-ellipsis">&hellip;</span></li>
+                            <li><a class="pagination-link" aria-label="Goto page 86">86</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          </main>
+        </div>
+    </div>
+  </div>
+
+  <!-- <script src="/bulma-admin-dashboard-template/dist/build.js"></script> -->
+
+</body>
+
+</html>
+
