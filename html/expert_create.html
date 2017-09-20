@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=7">
+
+    <meta name="language" content="en-EN" />
+    <meta name="author" content="Yudi Supriyadi" />
+    <title>Free Admin Dashboard Template Build with Bulma.io By Irfan Maulana</title>
+
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+<style>
+/* global */
+
+/* local */
+.expert-profile .field .control .input {
+    height: 2.0em;
+}
+
+.expert-profile-right .columns {
+    margin-bottom: 0;
+}
+
+.expert-profile-right .label {
+    color: #988787;
+    font-weight: normal;
+}
+
+.bio {
+    background: #f8f8f8;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.expert-product {
+    width: 384px;
+}
+
+.expert-product .card-image img {
+    max-width: 100%;
+    width: 384px;
+    height: 192px;
+}
+
+.expert-product .card-content .icon {
+    margin-right: 5px;
+}
+
+.expert-product .card-content .icon .fa-thumbs-up {
+    color: #1ca7e9;
+}
+
+.expert-product .card-content .icon .fa-thumbs-down {
+    color: #ff3860;
+}
+
+hr.separator {
+    margin: 50px 0;
+}
+
+.social-media .has-addons .button.is-static {
+    height: 2.0em;
+}
+
+#edit-control #or-separator.button {
+    border: none;
+    background-color: none;
+}
+
+#user-email label,
+#user-password label {
+    color: #988787;
+    font-weight: normal;
+}
+
+</style>
+
+</head>
+<body>
+    <header class="hero is-light">
+        <div class="hero-head">
+            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+
+                    <a class="navbar-item">
+                        <img src="images/bulma-logo.png" alt="Bulma logo">
+                    </a>
+                    <a class="navbar-item is-tab is-hidden-mobile">Experts</a>
+                    <a class="navbar-item is-tab is-hidden-mobile">Products</a>
+
+                    <button class="button navbar-burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+
+
+                <div class="navbar-menu navbar-end" id="navMenu">
+                    <a class="navbar-item is-tab is-hidden-tablet is-active">Home</a>
+                    <a class="navbar-item is-tab is-hidden-tablet">Experts</a>
+                    <a class="navbar-item is-tab is-hidden-tablet">Products</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            <figure class="image is-32x32" style="margin-right:.5em;">
+                                <img src="images/avatar.jpg">
+                            </figure>
+                            Yudi
+                        </a>
+
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-o"></i>
+                                </span>
+                                My Profile
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                <span class="icon is-small">
+                                    <i class="fa fa-power-off"></i>
+                                </span>
+                                Sign Out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <div class="section">
+            <div class="container">
+                <div class="columns">
+                    <main class="column">
+
+                        <nav class="level">
+                            <div class="level-left">
+                                <div class="level-item">
+                                <div class="title">Me</div>
+                                </div>
+                            </div>
+                            <div class="level-right">
+                            </div>
+                        </nav>
+
+                        <div class="columns">
+                            <div class="column is-three-quarters expert-profile">
+                                <div class="columns">
+                                    <div class="column">
+                                        <img src="" style="width:176px; height: 176px;">
+                                    </div>
+                                    <div class="column is-three-quarters expert-profile-right">
+                                        <div class="columns">
+                                            <div class="column is-2 label">
+                                                ID
+                                            </div>
+                                            <div class="column is-8">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" placeholder="Text input" type="text" value="ASD815" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="columns">
+                                            <div class="column is-2 label">Nama</div>
+                                            <div class="column is-8">
+                                                <div class="field">
+                                                    <div class="control">
+                                                        <input class="input" placeholder="Text input" type="text" value="Irfan Maulana">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <br>
+                                        <h6 class="title is-6">Social Media</h6>
+
+                                        <div class="columns social-media">
+                                            <div class="column is-4">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-twitter"></i>
+                                                            </span>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control">
+                                                        <input class="input" type="text" placeholder="@username">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="column is-4">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-facebook"></i>
+                                                            </span>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control">
+                                                        <input class="input" type="text" placeholder="your_facebook_url">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="column is-4">
+                                                <div class="field has-addons">
+                                                    <p class="control">
+                                                        <a class="button is-static">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-linkedin"></i>
+                                                            </span>
+                                                        </a>
+                                                    </p>
+                                                    <p class="control">
+                                                        <input class="input" type="text" placeholder="username">
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <h6 class="title is-6">Bio</h6>
+                                <textarea class="textarea" name="" rows="6" placeholder="Insert your bio here..."></textarea>
+
+                                <h6 class="title is-6" style="margin-top: 60px; font-style: italic">Last step, it will easy!</h6>
+                                <div class="columns">
+                                <div class="column is-7 is-multiline">
+                                    <div id="user-email" class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">Email</label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input class="input" type="text" placeholder="email@site.com">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="user-password" class="field is-horizontal">
+                                        <div class="field-label is-normal">
+                                            <label class="label">Password</label>
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <input class="input" type="password" placeholder="*******">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="field is-horizontal">
+                                        <div class="field-label">
+                                            <!-- Left empty for spacing -->
+                                        </div>
+                                        <div class="field-body">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <button class="button is-primary">
+                                                        Create My Profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+
+				<hr class="separator">
+
+				<h6 class="title is-6">The Expert's Products</h6>
+                                <p class="has-text-grey-light"><i>Your products goes here</i></p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
