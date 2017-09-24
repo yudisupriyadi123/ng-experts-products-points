@@ -1,0 +1,40 @@
+<pagination-template  #p="paginationApi"
+                      [id]="id"
+                      [maxSize]="maxSize"
+                      (pageChange)="pageChange.emit($event)">
+
+  <nav
+    class="pagination is-centered"
+    role="navigation"
+    [attr.aria-test]="123"
+    aria-label="pagination">
+
+    <a class="pagination-previous"
+      [attr.disabled]="p.isFirstPage() ? true : null"
+      (click)="p.previous()">
+      {{previousLabel}}
+    </a>
+    <a class="pagination-next"
+      [attr.disabled]="p.isFirstPage() ? true : null"
+      (click)="p.next()">
+      {{nextLabel}}
+    </a>
+    <ul class="pagination-list">
+      <li *ngFor="let page of p.pages">
+        <a *ngIf="p.getCurrent() !== page.value"
+          class="pagination-link">
+          {{page.label}}
+        </a>
+
+        <a *ngIf="p.getCurrent() === page.value"
+          class="pagination-link"
+          aria-current="page">
+          {{page.label}}
+        </a>
+      </li>
+    </ul>
+
+  </nav>
+
+</pagination-template>
+
