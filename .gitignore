@@ -51,3 +51,5 @@ Thumbs.db
 *.swo
 html/css/
 html/images/
+src/assets/css/bulma.css
+src/assets/css/font-awesome/
