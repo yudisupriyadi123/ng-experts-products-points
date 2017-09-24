@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ExpertListComponent } from './src/app/expert/expert-list/expert-list.component';
+
+import { SharedModule } from '../shared/shared.module';
+import { ExpertRoutingModule } from './expert-routing.module';
+
+import { ExpertListComponent } from './expert-list/expert-list.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    ExpertRoutingModule,
   ],
   declarations: [ExpertListComponent]
 })
 export class ExpertModule { }
+
