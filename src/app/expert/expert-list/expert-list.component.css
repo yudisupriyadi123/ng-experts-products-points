@@ -26,3 +26,9 @@
   color: #a49a9a;
 }
 
+.expert-product-number {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 30px;
+}
+
