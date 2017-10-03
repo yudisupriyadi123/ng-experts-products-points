@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ExpertListComponent } from './expert-list/expert-list.component';
+import { ExpertDetailComponent } from './expert-detail/expert-detail.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
         path: 'list',
         component: ExpertListComponent,
       },
+      {
+        path: 'profile/:id',
+        component: ExpertDetailComponent,
+      }
     ],
   },
 ];

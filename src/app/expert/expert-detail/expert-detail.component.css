@@ -1,0 +1,60 @@
+.field .control .input {
+  height: 2.em;
+}
+
+.expert-top-profile .columns {
+  margin-bottom: 0;
+}
+
+#photo-profile {
+  width: 176px;
+  height: 176px;
+}
+
+.expert-top-profile .label {
+  color: #988787;
+  font-weight: normal;
+}
+
+.expert-top-profile .icon {
+  color: #1ca7e9;
+  background: yellow;
+}
+
+.expert-top-profile .social-media {
+  color: #1ca7e9;
+}
+
+.bio {
+  background: #f8f8f8;
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.expert-product {
+  width: 320px;
+}
+
+.expert-product .card-image img {
+  max-width: 100%;
+  width: 100%;
+  height: 256px;
+}
+
+.expert-product .card-footer .icon {
+  margin-right: 5px;
+}
+
+.expert-product .card-footer .icon .fa-thumbs-up {
+  color: #1ca7e9;
+}
+
+.expert-product .card-footer .icon .fa-thumbs-down {
+  color: #ff3860;
+}
+
+hr.separator {
+  margin: 50px 0;
+}
+

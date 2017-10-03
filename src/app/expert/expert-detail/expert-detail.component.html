@@ -1,0 +1,106 @@
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <main class="column">
+        <div class="title">Expert</div>
+
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <div class="columns expert-top-profile">
+              <div class="column">
+                <img id="photo-profile" src="{{ expert.avatar['176x176'] }}" style="width:176px; height: 176px;">
+              </div>
+              <div class="column is-three-quarters">
+                <div class="columns">
+                  <div class="column is-2 label">
+                    ID
+                  </div>
+                  <div class="column is-8">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" placeholder="Text input" type="text" value="{{ expert.id }}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="column is-2 label">Name</div>
+                  <div class="column is-8">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" placeholder="Text input" type="text" value="{{ expert.name }}">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <h6 class="title is-6">Social Media</h6>
+
+                <div class="columns social-media">
+                  <div class="column is-4">
+                    <span class="icon is-small">
+                      <i class="fa fa-twitter" style="color: green"></i>
+                    </span>
+                    : {{ expert.social_media['twitter_username'] }}
+                  </div>
+                  <div class="column is-4">
+                    <span class="icon is-small">
+                      <i class="fa fa-facebook" style="color: green"></i>
+                    </span>
+                    : {{ expert.social_media['facebook_url'] }}
+                  </div>
+                  <div class="column is-4">
+                    <span class="icon is-small">
+                      <i class="fa fa-linkedin" style="color: green"></i>
+                    </span>
+                    : {{ expert.social_media['linkedin_username'] }}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <h6 class="title is-6">Bio</h6>
+            <div class="bio content" [innerHTML]="expert.bio">
+            </div>
+
+            <hr class="separator">
+
+            <h6 class="title is-6">The Expert's Products</h6>
+
+            <div class="columns is-multiline">
+              <div *ngFor="let product of products" class="column">
+                <div class="card expert-product">
+                  <div class="card-image">
+                    <figure class="image">
+                      <img alt="Placeholder image" src="{{ product.images['384x192'] }}">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="level-item">{{ product.name }}</div>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-footer-item">
+                    <span class="icon is-small">
+                      <i class="fa fa-thumbs-up"></i>
+                    </span>
+                    {{ product.pros_count }}
+                    </p>
+                    <p class="card-footer-item">
+                    <span class="icon is-small">
+                      <i class="fa fa-thumbs-down"></i>
+                    </span>
+                    {{ product.cons_count }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
