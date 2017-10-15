@@ -7,5 +7,8 @@ export class Expert {
     '64x64': string,
     '176x176': string,
   };
+
+  email         : string;
+  password      : string;
 }
 
