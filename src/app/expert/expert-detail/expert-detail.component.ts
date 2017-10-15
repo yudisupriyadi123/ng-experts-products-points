@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { ExpertService } from '../../core/expert.service';
 
-import { ExpertDetail } from '../shared/expert-detail.model';
+import { Expert } from '../shared/expert.model';
 
 @Component({
   selector: 'app-expert-detail',
@@ -11,7 +11,7 @@ import { ExpertDetail } from '../shared/expert-detail.model';
 })
 export class ExpertDetailComponent implements OnInit {
 
-  expert: ExpertDetail;
+  expert: Expert;
   /* products: Product[]; // expert product */
   /* TODO: Remove below, uncomment above */
   products = [
