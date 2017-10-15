@@ -1,0 +1,73 @@
+#photo-profile {
+  width: 176px;
+  height: 176px;
+}
+
+.expert-profile .field .control .input {
+  height: 2.em;
+}
+
+.expert-profile-right .columns {
+  margin-bottom: 0;
+}
+
+.expert-profile-right .label {
+  color: #988787;
+  font-weight: normal;
+}
+
+.bio {
+  background: #f8f8f8;
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.expert-product {
+  width: 384px;
+}
+
+.expert-product .card-image img {
+  max-width: 100%;
+  width: 384px;
+  height: 192px;
+}
+
+.expert-product .card-content .icon {
+  margin-right: 5px;
+}
+
+.expert-product .card-content .icon .fa-thumbs-up {
+  color: #1ca7e9;
+}
+
+.expert-product .card-content .icon .fa-thumbs-down {
+  color: #ff3860;
+}
+
+hr.separator {
+  margin: 50px 0;
+}
+
+.social-media .has-addons .button.is-static {
+  height: 2.em;
+}
+
+#edit-control #or-separator.button {
+  border: none;
+  background-color: none;
+}
+
+#last-step-title {
+  margin-top: 60px;
+
+  /* TODO: use bulma css class instead */
+  font-style: italic;
+}
+
+#user-email label,
+#user-password label {
+  color: #988787;
+  font-weight: normal;
+}
+

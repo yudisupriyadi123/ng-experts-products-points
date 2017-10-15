@@ -1,0 +1,162 @@
+<div class="section">
+  {{ form.value | json }}
+</div>
+
+<div class="section">
+<form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  <div class="container">
+    <div class="columns">
+      <main class="column">
+
+        <nav class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <div class="title">Me</div>
+            </div>
+          </div>
+          <div class="level-right">
+          </div>
+        </nav>
+
+        <div class="columns">
+          <div class="column is-three-quarters expert-profile">
+            <div class="columns">
+              <div class="column">
+                <!-- TODO: Change path to real placeholder image -->
+                <img id="photo-profile" src="placeholder.jpg">
+              </div>
+              <div class="column is-three-quarters expert-profile-right">
+                <div class="columns">
+                  <div class="column is-2 label">
+                    ID
+                  </div>
+                  <div class="column is-8">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input" type="text" value="Auto Generated" disabled>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="columns">
+                  <div class="column is-2 label">Name</div>
+                  <div class="column is-8">
+                    <div class="field">
+                      <div class="control">
+                        <input formControlName="name" class="input" type="text" name="expert_name">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br>
+                <h6 class="title is-6">Social Media</h6>
+
+                <div formGroupName="social_media" class="columns social-media">
+                  <div class="column is-4">
+                    <div class="field has-addons">
+                      <p class="control">
+                      <a class="button is-static">
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-twitter"></i>
+                        </span>
+                      </a>
+                      </p>
+                      <p class="control">
+                        <input formControlName="twitter" class="input" type="text" name="expert_twitter_acount" placeholder="@username">
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column is-4">
+                    <div class="field has-addons">
+                      <p class="control">
+                      <a class="button is-static">
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-facebook"></i>
+                        </span>
+                      </a>
+                      </p>
+                      <p class="control">
+                      <input formControlName="facebook" class="input" type="text" name="expert_facebook_account" placeholder="your_facebook_url">
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column is-4">
+                    <div class="field has-addons">
+                      <p class="control">
+                      <a class="button is-static">
+                        <span class="icon is-small is-left">
+                          <i class="fa fa-linkedin"></i>
+                        </span>
+                      </a>
+                      </p>
+                      <p class="control">
+                      <input formControlName="linkedin" class="input" type="text" name="expert_linkedin_account" placeholder="username">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <h6 class="title is-6">Bio</h6>
+            <textarea formControlName="bio" class="textarea" name="expert_bio" rows="6" placeholder="Insert your bio here..."></textarea>
+
+            <h6 id="last-step-title" class="title is-6">Last step, it will easy!</h6>
+            <div class="columns">
+              <div class="column is-7 is-multiline">
+                <div id="user-email" class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Email</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <input formControlName="email" class="input" type="email" name="expert_email" placeholder="email@site.com">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="user-password" class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Password</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <input formControlName="password" class="input" type="password" name="expert_password" placeholder="Your password">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field is-horizontal">
+                  <div class="field-label">
+                    <!-- Left empty for spacing -->
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <button class="button is-primary">
+                          Create My Profile
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="separator">
+
+            <h6 class="title is-6">The Expert's Products</h6>
+            <p class="has-text-grey-light"><i>Your products goes here</i></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</form>
+</div>
+
