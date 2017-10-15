@@ -6,7 +6,6 @@ export let EXPERTS: Expert[] = [
       id: 11,
       name: 'Yudi Supriyadi',
       product_count: 5,
-
       avatar: {
         '32x32': 'assets/images/profile_32x32.jpeg',
         '64x64': 'assets/images/profile_64x64.jpeg',
@@ -19,13 +18,11 @@ export let EXPERTS: Expert[] = [
       id: 12,
       name: 'Irfan Maulana',
       product_count: 8,
-
       avatar: {
         '32x32': 'assets/images/profile_32x32.jpeg',
         '64x64': 'assets/images/profile_64x64.jpeg',
         '176x176': 'assets/images/profile_176x176.jpeg'
       },
-
       email: 'irfan@gmail.com',
       password: 'demo',
     },
@@ -33,13 +30,11 @@ export let EXPERTS: Expert[] = [
       id: 13,
       name: 'Gatot Kaca',
       product_count: 100,
-
       avatar: {
         '32x32': 'assets/images/profile_32x32.jpeg',
         '64x64': 'assets/images/profile_64x64.jpeg',
         '176x176': 'assets/images/profile_176x176.jpeg'
       },
-
       email: 'gatot@gmail.com',
       password: 'demo',
     },
@@ -54,7 +49,6 @@ export let EXPERT: ExpertDetail = {
     '64x64': 'assets/images/profile_64x64.jpeg',
     '176x176': 'assets/images/profile_176x176.jpeg'
   },
-
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do' + 
   'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad' +
   'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex' +
@@ -71,13 +65,11 @@ export let EXPERT: ExpertDetail = {
   'adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore' +
   'et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis' +
   'nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid',
-
   social_media : {
     'twitter_username': 'yudi099',
     'linkedin_username': 'yudi099',
     'facebook_url': 'yudi.supriyadi123',
   },
-
   email: 'yudi@gmail.com',
   password: 'demo',
 }
