@@ -4,8 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
 import { Expert } from '../expert/shared/expert.model';
-import { ExpertDetail } from '../expert/shared/expert-detail.model';
-import { EXPERTS, EXPERT } from './mock-expert';
+import { EXPERTS } from './mock-expert';
 
 @Injectable()
 export class ExpertService {
@@ -17,8 +16,13 @@ export class ExpertService {
   }
 
   /* TODO: allow caller to get specific Expert profile */
-  getExpert(): Observable<ExpertDetail> {
-    return Observable.of(EXPERT);
+  getExpert(): Observable<Expert> {
+    /* return Yudi Supriyadi data profile */
+    return Observable.of(EXPERTS.find((expert) => expert.id === 11));
+  }
+
+  addExpert(rookie: Expert) {
+    EXPERTS.push(rookie);
   }
 }
 
