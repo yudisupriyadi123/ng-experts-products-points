@@ -1,7 +1,7 @@
 import { Expert } from '../expert/shared/expert.model';
 import { ExpertDetail } from '../expert/shared/expert-detail.model';
 
-export const EXPERTS: Expert[] = [
+export let EXPERTS: Expert[] = [
     {
       id: 11,
       name: 'Yudi Supriyadi',
@@ -12,6 +12,8 @@ export const EXPERTS: Expert[] = [
         '64x64': 'assets/images/profile_64x64.jpeg',
         '176x176': 'assets/images/profile_176x176.jpeg'
       },
+      email: 'yudi@gmail.com',
+      password: 'demo',
     },
     {
       id: 12,
@@ -23,6 +25,9 @@ export const EXPERTS: Expert[] = [
         '64x64': 'assets/images/profile_64x64.jpeg',
         '176x176': 'assets/images/profile_176x176.jpeg'
       },
+
+      email: 'irfan@gmail.com',
+      password: 'demo',
     },
     {
       id: 13,
@@ -34,10 +39,13 @@ export const EXPERTS: Expert[] = [
         '64x64': 'assets/images/profile_64x64.jpeg',
         '176x176': 'assets/images/profile_176x176.jpeg'
       },
+
+      email: 'gatot@gmail.com',
+      password: 'demo',
     },
 ];
 
-export const EXPERT: ExpertDetail = {
+export let EXPERT: ExpertDetail = {
   id: 11,
   name: 'Yudi Supriyadi',
   product_count: 5,
@@ -68,6 +76,9 @@ export const EXPERT: ExpertDetail = {
     'twitter_username': 'yudi099',
     'linkedin_username': 'yudi099',
     'facebook_url': 'yudi.supriyadi123',
-  }
+  },
+
+  email: 'yudi@gmail.com',
+  password: 'demo',
 }
 
