@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import { ExpertService } from '../../core/expert.service';
 
 @Component({
   selector: 'app-expert-create',
@@ -9,13 +12,18 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ExpertCreateComponent implements OnInit {
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(
+    private router: Router,
+    private formBuilder: FormBuilder,
+    private expertService: ExpertService,
+  ) { }
 
   ngOnInit() {
     this.createForm();
   }
 
   createForm() {
+    /* TODO: add validation to existing email */
     this.form = this.formBuilder.group({
       name: ['', Validators.required],
       bio: ['', Validators.required],
@@ -38,7 +46,10 @@ export class ExpertCreateComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log('executed');
+    let expertId = this.expertService.addExpert(this.form.value);
+    // this.router.navigateByUrl('/product/list');
+    // TODO: remove below, uncomment above after Product component created
+    this.router.navigateByUrl(`/expert/profile/${expertId}`);
   }
 
   /* TODO: implement upload photo profile component */
