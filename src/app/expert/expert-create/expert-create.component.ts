@@ -28,9 +28,9 @@ export class ExpertCreateComponent implements OnInit {
       name: ['', Validators.required],
       bio: ['', Validators.required],
       social_media: this.formBuilder.group({
-        twitter: ['', Validators.pattern(/@\w+/)],
-        facebook: '',
-        linkedin: '',
+        twitter_username: ['', Validators.pattern(/@\w+/)],
+        facebook_url: '',
+        linkedin_username: '',
       }),
       email: ['', [
           Validators.required,
