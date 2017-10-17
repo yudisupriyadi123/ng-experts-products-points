@@ -8,7 +8,8 @@
           <div class="column is-three-quarters">
             <div class="columns expert-top-profile">
               <div class="column">
-                <img id="photo-profile" src="{{ expert.avatar['176x176'] }}" style="width:176px; height: 176px;">
+                <img *ngIf="expert.avatar" id="photo-profile" src="{{ expert.avatar['176x176'] }}" style="width:176px; height: 176px;">
+                <img *ngIf="!expert.avatar" id="photo-profile" src="assets/images/avatar-placeholder-penguin.png" style="width:176px; height: 176px;">
               </div>
               <div class="column is-three-quarters">
                 <div class="columns">
@@ -39,6 +40,7 @@
 
                 <div class="columns social-media">
                   <div class="column is-4">
+                    <!-- TODO: use link on this -->
                     <span class="icon is-small">
                       <i class="fa fa-twitter" style="color: green"></i>
                     </span>
