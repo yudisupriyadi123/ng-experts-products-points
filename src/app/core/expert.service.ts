@@ -15,10 +15,8 @@ export class ExpertService {
     return Observable.of(EXPERTS);
   }
 
-  /* TODO: allow caller to get specific Expert profile */
-  getExpert(): Observable<Expert> {
-    /* return Yudi Supriyadi data profile */
-    return Observable.of(EXPERTS.find((expert) => expert.id === 11));
+  getExpert(id: number): Observable<Expert> {
+    return Observable.of(EXPERTS.find((expert) => expert.id === id));
   }
 
   addExpert(rookie: Expert) {
