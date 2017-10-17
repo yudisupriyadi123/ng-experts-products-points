@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+
+import 'rxjs/add/operator/switchMap';
 
 import { ExpertService } from '../../core/expert.service';
 
@@ -34,13 +37,17 @@ export class ExpertDetailComponent implements OnInit {
   ]
 
   /* TODO: add productService */
-  constructor(private expertService: ExpertService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private expertService: ExpertService
+  ) { }
 
   ngOnInit() {
     /* TODO: catch param :id in url for getting requested expert */
-    /* TODO: send caught :id to getExpert() method */
-    this.expertService.getExpert()
-      .subscribe((expert) => this.expert = expert);
+    this.route.paramMap
+      .switchMap(
+        (params: ParamMap) => this.expertService.getExpert( +params.get('id') )
+      ).subscribe(expert => this.expert = expert);
   }
 
 }
